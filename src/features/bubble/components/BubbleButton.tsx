@@ -53,7 +53,9 @@ export const BubbleButton = (props: Props) => {
             height: '200px', // Menetapkan tinggi gambar
             position: 'absolute', // Memastikan gambar ditempatkan secara absolut
           }}
-          class={`duration-200 transition ${props.isBotOpened ? 'scale-0 opacity-0' : 'scale-100 opacity-100'} ${props.size === 'large' ? ' w-9' : ' w-7'}`}
+          class={`duration-200 transition ${props.isBotOpened ? 'scale-0 opacity-0' : 'scale-100 opacity-100'} ${
+            props.size === 'large' ? ' w-9' : ' w-7'
+          }`}
           alt="Icon"
         />
       </Show>
