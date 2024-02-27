@@ -12,6 +12,8 @@ const defaultIconColor = 'white';
 const defaultBottom = '20';
 const defaultRight = '20';
 
+const iconImageUrl = 'https://raw.githubusercontent.com/b1-hercules/FlowiseChatEmbed/main/src/assets/icon.png';
+
 export const BubbleButton = (props: Props) => {
   return (
     <button
@@ -45,7 +47,7 @@ export const BubbleButton = (props: Props) => {
       </Show> */}
       <Show when={isNotDefined(props.customIconSrc)} keyed>
         <img
-          src="../assets/icon.png" // Change this path to where your image is located
+          src={iconImageUrl} // Change this path to where your image is located
           class={
             `absolute duration-200 transition ` +
             (props.isBotOpened ? 'scale-0 opacity-0' : 'scale-100 opacity-100') +
