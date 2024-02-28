@@ -49,8 +49,7 @@ export const BubbleButton = (props: Props) => {
         <img
           src="https://raw.githubusercontent.com/b1-hercules/FlowiseChatEmbed/main/src/assets/icon.png"
           style={{
-            width: '200px', // Menetapkan lebar gambar
-            height: '200px', // Menetapkan tinggi gambar
+            width: '400px', // Menetapkan lebar gambar
             position: 'absolute', // Memastikan gambar ditempatkan secara absolut
           }}
           class={`duration-200 transition ${props.isBotOpened ? 'scale-0 opacity-0' : 'scale-100 opacity-100'} ${
